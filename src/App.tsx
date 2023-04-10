@@ -7,15 +7,14 @@ import './App.css'
 function App() {
   
   return (
-    <>
     <div className='container'>
     <div>你好</div>
     <div className='app'>
-      <CatFriends></CatFriends>
+      <CatFriends/>
     </div>
     <div>test</div>
+    <div>kkk</div>
     </div>
-    </>
   );
 }
 

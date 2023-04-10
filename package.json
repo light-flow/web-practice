@@ -10,6 +10,8 @@
   "author": "lostli",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
@@ -36,10 +38,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run eslint"
-    }
   }
 }
