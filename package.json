@@ -4,7 +4,8 @@
   "description": "pratice",
   "scripts": {
     "build": "webpack --mode production",
-    "eslint": "eslint src --ext .ts,.tsx"
+    "eslint": "eslint src --ext .ts,.tsx",
+    "prepare": "husky install"
   },
   "author": "lostli",
   "license": "ISC",
@@ -22,7 +23,7 @@
     "eslint-plugin-react": "^7.32.2",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "style-loader": "^3.3.2",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
