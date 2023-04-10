@@ -14,6 +14,7 @@ function App() {
       <CatFriends></CatFriends>
     </div>
     <div>test</div>
+    <div>test</div>
     </div>
     </>
   );

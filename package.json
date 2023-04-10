@@ -37,6 +37,8 @@
     "react-router-dom": "^6.10.0"
   },
   "husky": {
-    "pre-commit": "eslint src"
+    "hooks": {
+      "pre-commit": "npm run eslint"
+    }
   }
 }
