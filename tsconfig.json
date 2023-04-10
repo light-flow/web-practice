@@ -7,7 +7,8 @@
       "preserveConstEnums": true,  // 保留 const 和 enum 声明
       "sourceMap": true,           // 生成目标文件的sourceMap文件
       "jsx": "react",
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true
     },
     "include": [
         "./src"

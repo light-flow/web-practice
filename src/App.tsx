@@ -13,7 +13,6 @@ function App() {
       <CatFriends/>
     </div>
     <div>test</div>
-    <div>kkk</div>
     </div>
   );
 }
