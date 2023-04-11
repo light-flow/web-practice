@@ -1,9 +1,9 @@
-import React from 'react';
-import { useRef } from 'react';
+import * as React from 'react';
 import './component.css'
+import { Column, Data } from './interface';
 
-export default function CatFriends() {
-  const listRef = useRef(null);
+export function CatFriends() {
+  const listRef = React.useRef(null);
 
   function scrollToIndex(index: number) {
     const listNode = listRef.current;
@@ -53,4 +53,20 @@ export default function CatFriends() {
       </div>
     </>
   );
+}
+
+interface Prop {
+  columns: Column[],
+  datas: Data[]
+}
+
+export function Table(prop: Prop) {
+  return (
+    <table>
+      <tr>
+        {prop.columns.map(column => <th key={column.key}>{column.title}</th>)}
+      </tr>
+      {prop.datas.map(data => <tr key={data.key}>{prop.columns.map(column => <td key={column.key}>{data[column.dataIndex]}</td>)}</tr>)}
+    </table>
+  )
 }
