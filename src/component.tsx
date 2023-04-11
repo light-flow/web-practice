@@ -64,9 +64,12 @@ export function Table(prop: Prop) {
   return (
     <table>
       <tr>
-        {prop.columns.map(column => <th key={column.key}>{column.title}</th>)}
+        {prop.columns.map(column => 
+         <th key={column.key}>{column.title}</th>)}
       </tr>
-      {prop.datas.map(data => <tr key={data.key}>{prop.columns.map(column => <td key={column.key}>{data[column.dataIndex]}</td>)}</tr>)}
+      {prop.datas.map(data => 
+        <tr key={data.key}>{prop.columns.map(column => 
+         <td key={column.key}>{data[column.dataIndex]}</td>)}</tr>)}
     </table>
   )
 }
